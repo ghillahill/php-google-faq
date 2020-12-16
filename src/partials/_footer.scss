@@ -1,0 +1,22 @@
+footer {
+    padding: $general_padding;
+    background-color: $footer_background;
+}
+
+footer .container {
+    @include flex(row, space-between, center);
+}
+
+footer ul {
+    @include flex(row, flex-start, center);
+    list-style-type: none;
+}
+
+footer ul li {
+    padding: $footer_menu_padding;
+}
+
+footer ul li small a{
+    color: $link_menu_color;
+    text-decoration: none;
+}

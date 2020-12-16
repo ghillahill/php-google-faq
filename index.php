@@ -73,18 +73,46 @@
         </header>
         <main>
             <div class="container">
-                <?php foreach ($faq as $domande) { ?>
-                    <div class="domande">
-                        <h2> <?php echo $domande["titolo_domanda"]; ?> </h2>
-                        <?php foreach ($domande["risposte"] as $risposta) { ?>
-                            <p class="text"> <?php echo $risposta; ?></p>
-                        <?php } ?>
-                    </div>
-                <?php } ?>
+                <div class="faq">
+                    <?php foreach ($faq as $domande) { ?>
+                        <div class="domande">
+                            <h2> <?php echo $domande["titolo_domanda"]; ?> </h2>
+                            <?php foreach ($domande["risposte"] as $risposta) { ?>
+                                <p class="text"> <?php echo $risposta; ?></p>
+                            <?php } ?>
+                        </div>
+                    <?php } ?>
+                </div>
             </div>
         </main>
         <footer>
+            <div class="container">
+                <div class="footer-menu">
+                    <ul>
+                        <li>
+                            <small><a href="#">Google</a></small>
+                        </li>
+                        <li>
+                            <small><a href="#">Tutto su Google</a></small>
+                        </li>
+                        <li>
+                            <small><a href="#">Privacy</a></small>
+                        </li>
+                        <li>
+                            <small><a href="#">Termini</a></small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-lang">
+                    <span>
+                        <select>
+                            <option>Italiano</option>
+                            <option>English</option>                            
+                        </select>
+                    </span>
+                </div>
 
+            </div>
         </footer>
     </body>
 </html>

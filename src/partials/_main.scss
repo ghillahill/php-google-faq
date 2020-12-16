@@ -1,7 +1,12 @@
+.faq {
+    padding: $general_spacing;
+}
+
 .domande {
     padding: $general_padding;
 }
 
 p.text {
     padding: $paragraph_padding;
+    line-height: $paragraph_lineHeight;
 }
