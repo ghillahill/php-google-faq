@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   color: #3c4043;
 }
 
@@ -13,7 +14,59 @@ body {
   margin: 0 auto;
 }
 
+header {
+  padding: 20px 20px 0 20px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+}
+
+header nav.nav-logo {
+  padding-bottom: 20px;
+}
+
+header nav.nav-logo span img {
+  vertical-align: middle;
+}
+
+header nav.nav-logo span a {
+  font-size: 22px;
+  vertical-align: bottom;
+  text-decoration: none;
+  color: #5f6368;
+}
+
+header nav.nav-menu ul {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+header nav.nav-menu ul li {
+  padding-bottom: 10px;
+}
+
+header nav.nav-menu ul li.active {
+  border-bottom: 3px solid #3367d6;
+}
+
+header nav.nav-menu ul li a {
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: #5f6368;
+}
+
+header nav.nav-menu ul li.active a {
+  color: #3367d6;
+}
+
 .domande {
-  padding: 40px;
+  padding: 30px;
+}
+
+p.text {
+  padding: 15px 0;
 }
 

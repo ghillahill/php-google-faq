@@ -38,25 +38,49 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="public/app.css">
         <title>PHP Google FAQ</title>
     </head>
     <body>
         <header>
-
+            <nav class="nav-logo">
+                <span>
+                    <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="google">
+                    <a href="#">Privacy e termini</a>
+                </span>
+            </nav>
+            <nav class="nav-menu">
+                <ul>
+                    <li>
+                        <a href="#">Introduzione</a>
+                    </li>
+                    <li>
+                        <a href="#">Norme sulla privacy</a>
+                    </li>
+                    <li>
+                        <a href="#">Termini di servizio</a>
+                    </li>
+                    <li>
+                        <a href="#">Tecnologie</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Domande frequenti</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <main>
             <div class="container">
-                <?php foreach ($faq as $domande){?>
+                <?php foreach ($faq as $domande) { ?>
                     <div class="domande">
                         <h2> <?php echo $domande["titolo_domanda"]; ?> </h2>
-                        <?php foreach ($domande as $domanda){?>
-                            <p> <?php var_dump($domanda); ?></p>
-                            <?php
-                        }?>
+                        <?php foreach ($domande["risposte"] as $risposta) { ?>
+                            <p class="text"> <?php echo $risposta; ?></p>
+                        <?php } ?>
                     </div>
-                    <?php
-                } ?>
+                <?php } ?>
             </div>
         </main>
         <footer>

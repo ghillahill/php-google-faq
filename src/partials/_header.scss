@@ -1,0 +1,44 @@
+header {
+    padding: $header_padding;
+    border-bottom: 1px solid rgba(151,151,151,0.5);
+}
+
+header nav.nav-logo {
+    padding-bottom: $nav_padding;
+}
+
+header nav.nav-logo span img {
+    vertical-align: middle;
+}
+
+header nav.nav-logo span a {
+    font-size: $font_size_span_a;
+    vertical-align: bottom;
+    text-decoration: none;
+    color: $link_menu_color;
+}
+
+header nav.nav-menu ul {
+    width: 40%;
+    @include flex(row, space-around, center);
+    list-style-type: none;
+}
+
+header nav.nav-menu ul li {
+    padding-bottom: $link_menu_padding;
+}
+
+header nav.nav-menu ul li.active {
+    border-bottom: 3px solid $link_active_menu_color;
+}
+
+header nav.nav-menu ul li a {
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: $link_menu_color;
+}
+
+header nav.nav-menu ul li.active a {
+    color: $link_active_menu_color;
+}

@@ -1,3 +1,7 @@
 .domande {
-    padding: 40px;
+    padding: $general_padding;
+}
+
+p.text {
+    padding: $paragraph_padding;
 }
