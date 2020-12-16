@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #3c4043;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.domande {
+  padding: 40px;
+}
+
